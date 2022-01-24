@@ -16,16 +16,25 @@
     <main>
         <section>
             <h2>Ingrese el mensaje a encriptar/desencriptar</h2>
-            <label for="mensaje-texto"></label>
-            <input type="text" name="mensaje" id="mensaje-entrada" placeholder="Ingrese un mensaje a encriptar o desencriptar">
-            <button id="encriptador">Encriptar</button>
-            <button id="desencriptador">Desencriptar</button>
+            <div class="mensaje">
+                <label for="mensaje-texto"></label>
+                <textarea type="text" name="mensaje" id="mensaje-entrada" placeholder="Ingrese un mensaje a encriptar o desencriptar"></textarea>
+            </div>
+            <div>
+                <button id="encriptador">Encriptar</button>
+                <button id="desencriptador">Desencriptar</button>
+            </div>
+            
         </section>
 
         <section>
             <h2>Mensaje encriptado/desencriptado</h2>
-            <p id="mensaje-salida">dadad</p>
-            <button>Copiar</button>
+            <div class="mensaje">
+                <p id="mensaje-salida"></p>
+            </div>
+            <div>
+                <button id="copiar">Copiar</button>
+            </div>
         </section>
     </main>
 
@@ -35,5 +44,6 @@
 
     <script src="js/encriptar.js"></script>
     <script src="js/desencriptar.js"></script>
+    <script src="js/copiar.js"></script>
 </body>
 </html>

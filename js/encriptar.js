@@ -14,8 +14,16 @@ buttonEncriptador.addEventListener("click", function(){
 
     let mensaje = inputMensaje.value;
     
-    let mensajeEncriptado = encriptar(mensaje.toLowerCase());
-    outMensaje.textContent = mensajeEncriptado
+    if(mensaje){
+        let mensajeEncriptado = encriptar(mensaje.toLowerCase());
+        outMensaje.textContent = mensajeEncriptado;
+    }
+    else{
+        alert("Ingresa un mensaje a encriptar.");
+    }
+
+    inputMensaje.value = "";
+    inputMensaje.focus();
 
 })
 

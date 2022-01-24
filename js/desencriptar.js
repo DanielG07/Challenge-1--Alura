@@ -14,9 +14,16 @@ buttonDesencriptador.addEventListener("click", function(){
     
     let mensaje = inputMensaje.value;
     
-    let mensajeDesencriptado = desencriptar(mensaje.toLowerCase());
-    outMensaje.textContent = mensajeDesencriptado
+    if(mensaje){
+        let mensajeDesencriptado = desencriptar(mensaje.toLowerCase());
+        outMensaje.textContent = mensajeDesencriptado;
+    }
+    else{
+        alert("Ingresa un mensaje a desencriptar.");
+    }
 
+    inputMensaje.value = "";
+    inputMensaje.focus();
     
 })
 
